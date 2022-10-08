@@ -1,0 +1,91 @@
+*{
+ margin: 0;
+ font-family: 'Roboto', sans-serif;
+}
+body{
+ display: grid;
+ grid-template-columns: 1fr 2fr;
+ grid-template-rows: 1fr;
+ display: flex;
+ flex-wrap: wrap;
+}
+#bigForm{
+ grid-column-start: 2;
+ grid-row-start: 1 ;
+}
+#formOnly{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 20px ;
+ position: relative;
+ left: 50px;
+ top: 180px;
+}
+input{
+ appearance: none;
+ width: 200px;
+ height: 30px;
+}
+input:focus{
+ border-color: blue;
+}
+.paragraph1{
+ position: relative;
+ left: 50px;
+ top: 150px;
+ width: 546px;
+ margin-bottom: 10px;
+}
+.paragraph2{
+ position: relative;
+  left: 50px;
+  top: 200px;
+  width: 546px;
+}
+form > div {
+ width: 200px;
+}
+form button{
+ width: 100px;
+ background-color: rgb(255, 255, 255);
+ height: 30px;
+}
+button:hover{
+ cursor: pointer;
+}
+span{
+ color: red;
+}
+a{
+ text-decoration: none;
+ color: rgb(176, 132, 49);
+}
+.star{
+ visibility: hidden;
+ position: absolute;
+}
+@media screen and (max-width: 1010px) {
+ .couple{
+  visibility: hidden;
+ }
+ .star{
+  visibility: visible;
+ }
+ #bigForm{
+  position: absolute;
+  left: -40px;
+ }
+ .paragraph1{
+  width: 380px;
+ }
+}
+@media screen and (max-width: 480px){
+#formOnly{
+ display: flex;
+ flex-wrap: wrap;
+}
+.paragraph1 {
+ width: 380px;
+ margin: 0;
+}
+}

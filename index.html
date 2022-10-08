@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="style.css">
+ <title>Document</title>
+</head>
+<body>
+ <img src="https://i.pinimg.com/564x/cb/e8/15/cbe815988dc443f06cb3c83b9d8f368a.jpg" alt="" height="100px" class="star" width="100%">
+ <img src="https://i.pinimg.com/564x/d4/ab/e7/d4abe7f54d48275bff44a259b5299465.jpg" alt="" height="800vh" class="couple">
+ 
+ <div id="bigForm">
+  <p class="paragraph1">This is a basic form with some validations. <br>Lorem ipsum, dolor sit amet consectetur adipisicing
+   elit. Molestiae modi nesciunt expedita cum, magni, quae tempora impedit odio voluptatibus, eum temporibus sint
+   explicabo possimus ut illo. Aperiam dignissimos incidunt recusandae!</p>
+ <form action="lmao.com" method="post">
+  <div id="formOnly">
+  <div>
+  <label for="firstName">FIRST NAME <span>*</span></label>
+  <br>
+<input type="text" required id="firstName" name="firstName" placeholder="Enter your first name">
+</div>
+<div>
+<label for="lastName">LAST NAME <span>*</span></label><br>
+<input type="text" required id="lastName" name="lastName" placeholder="Enter your last name">
+</div>
+<div>
+<label for="email">EMAIL <span>*</span></label><br>
+<input type="email" required id="email" name="email" placeholder="Email">
+</div>
+<div>
+<label for="phoneNumber">PHONE NUMBER</label><br>
+<input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Phone number">
+</div>
+<div>
+<label for="password">PASSWORD <span>*</span></label><br>
+<input type="password" name="password" id="password" placeholder="Password" required>
+</div>
+<div>
+<label for="checkPass">CONFIRM PASSWORD <span>*</span></label><br>
+<input type="password" name="checkPass" id="checkPass" placeholder="Confirm your password" required>
+</div>
+<button type="submit">Sign up</button>
+</div>
+ </form>
+ <p class="paragraph2">Already have an account? <a href="#">Log in</a></p>
+ </div>
+</body>
+</html>
